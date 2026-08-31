@@ -53,7 +53,7 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // Contact form (client-side only demo submission)
+  // Contact form — posts to the /api/contact Cloudflare Pages Function
   var form = document.getElementById("contactForm");
   var note = document.getElementById("formNote");
 
@@ -68,13 +68,37 @@
 
       var submitBtn = form.querySelector(".form-submit");
       if (submitBtn) submitBtn.setAttribute("disabled", "true");
+      note.classList.remove("is-error");
+      note.textContent = "Skickar...";
 
-      note.textContent = "Tack! Vi återkommer inom en arbetsdag.";
-      form.reset();
+      var payload = {
+        name: form.name.value,
+        email: form.email.value,
+        company: form.company.value,
+        message: form.message.value,
+        website: form.website.value, // honeypot — should stay empty
+      };
 
-      if (submitBtn) {
-        setTimeout(function () { submitBtn.removeAttribute("disabled"); }, 1200);
-      }
+      fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error("request-failed");
+          return res.json();
+        })
+        .then(function () {
+          note.textContent = "Tack! Vi återkommer inom en arbetsdag.";
+          form.reset();
+        })
+        .catch(function () {
+          note.classList.add("is-error");
+          note.textContent = "Något gick fel. Maila oss gärna direkt istället.";
+        })
+        .finally(function () {
+          if (submitBtn) submitBtn.removeAttribute("disabled");
+        });
     });
   }
 })();

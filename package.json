@@ -1,0 +1,13 @@
+{
+  "name": "humantechconnect-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "HumanTechConnect AB — marknadsföringssajt och blogg",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
