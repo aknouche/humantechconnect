@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+<article class="section post">
+  <div class="container narrow">
+    <a href="/blog/" class="post-back">&larr; Alla artiklar</a>
+    <p class="eyebrow">{{ date | svDate }}</p>
+    <h1 class="post-title">{{ title }}</h1>
+    {% if description %}<p class="post-lede">{{ description }}</p>{% endif %}
+    <div class="prose">
+      {{ content | safe }}
+    </div>
+  </div>
+</article>

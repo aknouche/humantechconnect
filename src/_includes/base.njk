@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title }} | HumanTechConnect</title>
+<meta name="description" content="{{ description }}">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="/#top" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      HumanTechConnect
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="/#om-oss">Om oss</a>
+      <a href="/#metod">Metod</a>
+      <a href="/blog/">Blogg</a>
+      <a href="/#kontakt">Kontakt</a>
+      <a href="https://www.linkedin.com/company/humantechconnect-ab" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+
+    <a href="/#kontakt" class="btn btn-primary btn-small header-cta">Boka ett strategisamtal</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Öppna meny" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+{{ content | safe }}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/#top" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        HumanTechConnect
+      </a>
+      <p>Vi hjälper AI-, SaaS- och techbolag som säljer till enterprise och offentlig sektor att bygga en förutsägbar pipeline genom rätt GTM-strategi, försäljning och relationsbyggande.</p>
+    </div>
+
+    <div class="footer-links">
+      <span class="footer-links-title">Länkar</span>
+      <a href="/#om-oss">Om oss</a>
+      <a href="/#metod">Metod</a>
+      <a href="/blog/">Blogg</a>
+      <a href="/#kontakt">Kontakt</a>
+    </div>
+
+    <div class="footer-links">
+      <span class="footer-links-title">Kontakt</span>
+      <a href="tel:+46739172918">073-917 29 18</a>
+      <a href="https://www.linkedin.com/in/lamineaknouche/" target="_blank" rel="noopener">LinkedIn: Lamine Aknouche</a>
+      <a href="https://www.linkedin.com/company/humantechconnect-ab" target="_blank" rel="noopener">LinkedIn: HumanTechConnect</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> HumanTechConnect AB. Alla rättigheter förbehållna.</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Blogg
+description: Tankar om GTM-strategi, pipeline och tillväxt för AI-, SaaS- och techbolag.
+permalink: /blog/
+---
+<section class="section">
+  <div class="container narrow">
+    <p class="eyebrow reveal">Blogg</p>
+    <h1 class="reveal">Tankar om GTM, pipeline och tillväxt</h1>
+    <p class="section-desc reveal">Kort och konkret om vad som faktiskt driver möten, affärsmöjligheter och nya kunder.</p>
+
+    <div class="blog-list">
+      {% for post in collections.posts %}
+      <a class="blog-list-item reveal" href="{{ post.url }}">
+        <p class="blog-list-date">{{ post.date | svDate }}</p>
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.description }}</p>
+        <span class="blog-list-link">Läs artikeln &rarr;</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
