@@ -467,6 +467,57 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-size: 1.05rem;
 }
 
+.check-list.numbered li {
+  align-items: flex-start;
+}
+
+.check-list.numbered strong {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--text);
+}
+
+.check-list.numbered span {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+/* ---------------------------------------------
+   Link arrow / direct contact
+--------------------------------------------- */
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 28px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  transition: gap 0.2s var(--ease);
+}
+
+.link-arrow:hover { gap: 10px; }
+
+.contact-direct {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-direct a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+.contact-direct a:hover { color: var(--accent); }
+
 /* ---------------------------------------------
    Process
 --------------------------------------------- */
@@ -768,8 +819,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1.3fr 0.85fr 1fr;
+  gap: 48px;
   padding-bottom: 56px;
 }
 
