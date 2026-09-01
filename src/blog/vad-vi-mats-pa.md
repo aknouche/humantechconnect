@@ -4,14 +4,14 @@ description: Skickade meddelanden och bokade demos är inte resultat. Så här d
 date: 2026-08-05
 layout: post.njk
 ---
-Det är lätt att mäta aktivitet: antal skickade meddelanden, antal kopplingsförfrågningar, antal inlägg publicerade. Det är också missvisande. Aktivitet är input, inte output — och ett bolag i tillväxtfas har inte råd att optimera för fel mått.
+Det är lätt att mäta aktivitet: antal skickade meddelanden, antal kopplingsförfrågningar, antal inlägg publicerade. Det är också missvisande. Aktivitet är input, inte output, och ett bolag i tillväxtfas har inte råd att optimera för fel mått.
 
 ## Vad vi faktiskt mäts på
 
-- **Kvalificerade möten** — inte alla möten, utan möten med rätt beslutsfattare hos rätt typ av bolag.
-- **Konkreta affärsmöjligheter** — möten som konverterar till en faktisk säljprocess.
-- **Pipeline** — det sammanlagda värdet av affärsmöjligheter i rörelse, inte bara antalet.
-- **Nya kunder** — den enda siffran som till syvende och sist spelar roll.
+- **Kvalificerade möten.** Inte alla möten, utan möten med rätt beslutsfattare hos rätt typ av bolag.
+- **Konkreta affärsmöjligheter.** Möten som konverterar till en faktisk säljprocess.
+- **Pipeline.** Det sammanlagda värdet av affärsmöjligheter i rörelse, inte bara antalet.
+- **Nya kunder.** Den enda siffran som till syvende och sist spelar roll.
 
 ## Varför det spelar roll för er
 

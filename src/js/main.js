@@ -53,7 +53,7 @@
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // Contact form — posts to the /api/contact Cloudflare Pages Function
+  // Contact form: posts to the /api/contact Cloudflare Pages Function
   var form = document.getElementById("contactForm");
   var note = document.getElementById("formNote");
 
@@ -76,7 +76,7 @@
         email: form.email.value,
         company: form.company.value,
         message: form.message.value,
-        website: form.website.value, // honeypot — should stay empty
+        website: form.website.value, // honeypot, should stay empty
       };
 
       fetch("/api/contact", {
