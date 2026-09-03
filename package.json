@@ -2,7 +2,7 @@
   "name": "humantechconnect-site",
   "private": true,
   "version": "1.0.0",
-  "description": "HumanTechConnect AB — marknadsföringssajt och blogg",
+  "description": "HumanTechConnect AB, marknadsföringssajt",
   "scripts": {
     "build": "eleventy",
     "serve": "eleventy --serve"

@@ -1,12 +1,12 @@
-// Cloudflare Pages Function — handles POST /api/contact
+// Cloudflare Pages Function, handles POST /api/contact
 // Sends the contact form via the Resend API (https://resend.com).
 //
 // Required environment variables (set in Cloudflare Pages → Settings → Environment variables):
-//   RESEND_API_KEY   — API key from resend.com
-//   CONTACT_TO_EMAIL — the inbox that should receive form submissions
+//   RESEND_API_KEY: API key from resend.com
+//   CONTACT_TO_EMAIL: the inbox that should receive form submissions
 //
 // Optional:
-//   CONTACT_FROM_EMAIL — sender address (defaults to Resend's shared test domain)
+//   CONTACT_FROM_EMAIL: sender address (defaults to Resend's shared test domain)
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -58,7 +58,7 @@ export async function onRequestPost(context) {
       from: fromEmail,
       to: [env.CONTACT_TO_EMAIL],
       reply_to: email,
-      subject: "Nytt strategisamtal — " + company,
+      subject: "Nytt strategisamtal: " + company,
       text:
         "Namn: " + name + "\n" +
         "E-post: " + email + "\n" +
