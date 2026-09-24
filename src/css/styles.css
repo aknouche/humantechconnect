@@ -538,6 +538,8 @@ ul { margin: 0; padding: 0; list-style: none; }
    Metrics
 --------------------------------------------- */
 
+.metrics-grid.three { grid-template-columns: repeat(3, 1fr); }
+
 .metrics-grid {
   margin-top: 56px;
   display: grid;
@@ -734,6 +736,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 900px) {
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .metrics-grid.three { grid-template-columns: repeat(3, 1fr); }
   .split-inner { grid-template-columns: 1fr; gap: 40px; padding: 40px; }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
   .footer-inner { grid-template-columns: 1fr; gap: 40px; }
@@ -776,7 +779,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
   .section { padding: 88px 0; }
 
-  .metrics-grid { grid-template-columns: 1fr; }
+  .metrics-grid,
+  .metrics-grid.three { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 420px) {
