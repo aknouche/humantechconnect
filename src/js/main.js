@@ -54,6 +54,11 @@
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   // Contact form: posts to the /api/contact Cloudflare Pages Function
+  var isEn = document.documentElement.lang === "en";
+  var msg = isEn
+    ? { sending: "Sending...", ok: "Thank you! I will get back to you within one business day.", err: "Something went wrong. Please reach out directly instead." }
+    : { sending: "Skickar...", ok: "Tack! Jag återkommer inom en arbetsdag.", err: "Något gick fel. Hör gärna av dig direkt istället." };
+
   var form = document.getElementById("contactForm");
   var note = document.getElementById("formNote");
 
@@ -69,7 +74,7 @@
       var submitBtn = form.querySelector(".form-submit");
       if (submitBtn) submitBtn.setAttribute("disabled", "true");
       note.classList.remove("is-error");
-      note.textContent = "Skickar...";
+      note.textContent = msg.sending;
 
       var payload = {
         name: form.name.value,
@@ -89,12 +94,12 @@
           return res.json();
         })
         .then(function () {
-          note.textContent = "Tack! Vi återkommer inom en arbetsdag.";
+          note.textContent = msg.ok;
           form.reset();
         })
         .catch(function () {
           note.classList.add("is-error");
-          note.textContent = "Något gick fel. Maila oss gärna direkt istället.";
+          note.textContent = msg.err;
         })
         .finally(function () {
           if (submitBtn) submitBtn.removeAttribute("disabled");
