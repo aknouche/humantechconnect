@@ -1,6 +1,7 @@
 module.exports = {
   sv: {
     home: "/",
+    navMethod: "Metodik",
     navWhat: "Vad vi levererar",
     navModels: "Samarbetsmodeller",
     navContact: "Kontakt",
@@ -9,13 +10,14 @@ module.exports = {
     switchLabel: "EN",
     switchHref: "/en/",
     switchTitle: "In English",
-    footerText: "Vi hjälper AI-, SaaS- och tech-startups att navigera komplexa köpprocesser och stänga strategiskt viktiga affärer inom enterprise och offentlig sektor.",
+    footerText: "Vi hjälper AI-, SaaS- och tech-startups att hitta, validera och vinna affärer inom enterprise och offentlig sektor.",
     links: "Länkar",
     contact: "Kontakt",
     rights: "Alla rättigheter förbehållna.",
   },
   en: {
     home: "/en/",
+    navMethod: "Methodology",
     navWhat: "What we deliver",
     navModels: "Engagement models",
     navContact: "Contact",
@@ -24,7 +26,7 @@ module.exports = {
     switchLabel: "SV",
     switchHref: "/",
     switchTitle: "På svenska",
-    footerText: "We help AI, SaaS and tech startups navigate complex buying processes and close strategically important deals in enterprise and the public sector.",
+    footerText: "We help AI, SaaS and tech startups find, validate and win deals in enterprise and the public sector.",
     links: "Links",
     contact: "Contact",
     rights: "All rights reserved.",

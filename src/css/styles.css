@@ -780,7 +780,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   .section { padding: 88px 0; }
 
   .metrics-grid,
-  .metrics-grid.three { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 420px) {
@@ -791,3 +790,68 @@ ul { margin: 0; padding: 0; list-style: none; }
 .check-list + .card-desc { margin-top: 20px; }
 .card-grid.two { grid-template-columns: repeat(2, 1fr); }
 @media (max-width: 760px) { .card-grid.two { grid-template-columns: 1fr; } }
+
+/* ---------------------------------------------
+   Language switch
+--------------------------------------------- */
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+}
+
+.lang-switch:hover { border-color: var(--accent); }
+
+/* ---------------------------------------------
+   Opportunity Framework: fit formula
+--------------------------------------------- */
+
+.fit-block {
+  margin-top: 72px;
+  text-align: center;
+}
+
+.fit-formula {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin: 8px 0 0;
+}
+
+.fit-formula span { color: var(--accent); padding: 0 6px; }
+
+.fit-block .metrics-grid { margin-top: 32px; }
+.fit-block .section-desc { margin: 24px auto 0; }
+
+.metric { flex-direction: column; gap: 8px; }
+
+.metric-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  max-width: 260px;
+}
+
+.metric-step {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.metrics-grid.five { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 900px) { .metrics-grid.five { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) { .metrics-grid.five { grid-template-columns: 1fr; } }
+
+.outcome-list { margin: 32px 0; }
+.outcome-list li strong { color: var(--text); }
+
+@media (max-width: 760px) {
+  .nav a.lang-switch { width: auto; border: 1px solid var(--border-strong); padding: 6px 12px; margin-top: 8px; }
+}
+
+.card-grid.four { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 1000px) { .card-grid.four { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 760px) { .card-grid.four { grid-template-columns: 1fr; } }
