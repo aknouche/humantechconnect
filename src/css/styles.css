@@ -855,3 +855,15 @@ ul { margin: 0; padding: 0; list-style: none; }
 .card-grid.four { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 1000px) { .card-grid.four { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 760px) { .card-grid.four { grid-template-columns: 1fr; } }
+
+/* ---------------------------------------------
+   Research (why it works)
+--------------------------------------------- */
+
+.research-card { display: flex; flex-direction: column; justify-content: space-between; gap: 20px; }
+.research-card p.research-claim { font-size: 1.1rem; color: var(--text); }
+.research-claim strong { color: var(--accent); font-weight: 700; }
+.research-card p.research-sources { font-size: 0.8rem; color: var(--text-faint); }
+.research-sources a { color: var(--text-muted); text-decoration: underline; text-underline-offset: 3px; margin-left: 6px; }
+.research-sources a:hover { color: var(--accent); }
+.research-close { max-width: 720px; margin: 56px auto 0; text-align: center; }
