@@ -56,8 +56,8 @@
   // Contact form: posts to the /api/contact Cloudflare Pages Function
   var isEn = document.documentElement.lang === "en";
   var msg = isEn
-    ? { sending: "Sending...", ok: "Thank you! I will get back to you within one business day.", err: "Something went wrong. Please reach out directly instead." }
-    : { sending: "Skickar...", ok: "Tack! Jag återkommer inom en arbetsdag.", err: "Något gick fel. Hör gärna av dig direkt istället." };
+    ? { sending: "Sending...", ok: "Thank you! We will get back to you within one business day.", err: "Something went wrong. Please contact us directly instead." }
+    : { sending: "Skickar...", ok: "Tack! Vi återkommer inom en arbetsdag.", err: "Något gick fel. Kontakta oss gärna direkt istället." };
 
   var form = document.getElementById("contactForm");
   var note = document.getElementById("formNote");
