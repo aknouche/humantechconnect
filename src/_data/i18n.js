@@ -1,6 +1,6 @@
 module.exports = {
   // Set to the public URL of the AI Engineer application form (e.g. Tally) to show the Apply button
-  careersFormUrl: "",
+  careersFormUrl: "https://tally.so/r/eqkgOq",
   sv: {
     home: "/",
     navAbout: "Om oss",
