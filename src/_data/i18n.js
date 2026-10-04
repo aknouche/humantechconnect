@@ -1,8 +1,11 @@
 module.exports = {
+  // Set to the public URL of the AI Engineer application form (e.g. Tally) to show the Apply button
+  careersFormUrl: "",
   sv: {
     home: "/",
     navAbout: "Om oss",
     navExpertise: "Expertis",
+    navCareers: "Karriär",
     orgLabel: "Org.nr",
     navContact: "Kontakt",
     cta: "Kontakta oss",
@@ -19,6 +22,7 @@ module.exports = {
     home: "/en/",
     navAbout: "About us",
     navExpertise: "Expertise",
+    navCareers: "Careers",
     orgLabel: "Org. no.",
     navContact: "Contact",
     cta: "Contact us",
