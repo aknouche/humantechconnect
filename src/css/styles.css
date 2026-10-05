@@ -933,3 +933,23 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .loop-list strong { color: var(--text); font-weight: 600; }
+
+/* ---------------------------------------------
+   Legal / consent pages
+   --------------------------------------------- */
+.legal { padding-top: 160px; }
+.legal h1 { font-size: clamp(2rem, 4vw, 2.75rem); margin-bottom: 20px; }
+.legal h3 { margin: 32px 0 8px; }
+.legal p { color: var(--text-muted); }
+.consent-box {
+  margin-top: 48px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+}
+.consent-box h3 { margin-top: 0; }
+.consent-label { display: flex; gap: 12px; align-items: flex-start; margin: 12px 0 24px; color: var(--text); cursor: pointer; }
+.consent-label input { margin-top: 4px; width: 18px; height: 18px; flex: none; accent-color: var(--accent); }
+.consent-box .btn[aria-disabled="true"] { opacity: 0.4; pointer-events: none; }
+@media (max-width: 720px) { .legal { padding-top: 120px; } }

@@ -1,0 +1,36 @@
+---
+layout: base.njk
+lang: en
+permalink: /en/privacy/
+title: Privacy and cookies
+description: Privacy policy, cookies and consent for applying to HumanTechConnect AB.
+---
+<section class="section legal">
+  <div class="container narrow">
+    <h1>Privacy, cookies and consent</h1>
+    <p class="lead-text">This page explains how HumanTechConnect AB handles personal data and cookies. To apply as an AI engineer, please read and accept it first.</p>
+    <h3>Data controller</h3>
+    <p>HumanTechConnect AB, organisation number 559509-2361, Sweden, is the data controller. Contact us through the contact form on the start page or on +46 73-917 29 18.</p>
+    <h3>Data we collect when you apply</h3>
+    <p>Name, country, city, phone number, email, links to LinkedIn, GitHub and HuggingFace, CV, primary AI expertise, education, graduation year, years of experience, prior work with clients in the EU, US or GCC, English level, hourly rate and availability.</p>
+    <h3>Purpose and legal basis</h3>
+    <p>We use the data to assess your application, contact you and match you with client assignments. The legal basis is your consent (Article 6(1)(a) GDPR). You can withdraw consent at any time.</p>
+    <h3>Recipients and transfers</h3>
+    <p>Applications are collected through the form service Tally (Tally BV, EU), which acts as our data processor. We may share your profile with prospective clients only after contacting you. As you live outside the EU/EEA, your data is transferred to Sweden and handled under the GDPR.</p>
+    <h3>Retention</h3>
+    <p>We keep your application for up to 24 months, or until you ask us to delete it.</p>
+    <h3>Your rights</h3>
+    <p>You have the right to access, rectify, erase and restrict processing of your data, to object to processing and to data portability. You can also lodge a complaint with the Swedish Authority for Privacy Protection (IMY), imy.se.</p>
+    <h3>Cookies</h3>
+    <p>Our website does not use cookies for tracking, analytics or marketing. It sets only strictly necessary storage, so no cookie banner is needed. Fonts are loaded from Google Fonts, which means your IP address is sent to Google. The form service Tally may set its own cookies when you open the application form, as described in Tally's cookie policy (tally.so/help/cookie-policy).</p>
+
+    <div class="consent-box" id="samtycke">
+      <h3>Consent to apply</h3>
+      <label class="consent-label">
+        <input type="checkbox" id="consentCheck">
+        <span>I have read the information above and consent to HumanTechConnect AB processing my personal data to assess my application and match me with assignments.</span>
+      </label>
+      <a href="{{ i18n.careersFormUrl }}" class="btn btn-primary" id="consentBtn" aria-disabled="true">Accept and continue to the application</a>
+    </div>
+  </div>
+</section>

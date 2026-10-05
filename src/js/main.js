@@ -106,4 +106,16 @@
         });
     });
   }
+
+  // Consent gate: the apply link is enabled only after the box is ticked
+  var consentCheck = document.getElementById("consentCheck");
+  var consentBtn = document.getElementById("consentBtn");
+  if (consentCheck && consentBtn) {
+    consentBtn.addEventListener("click", function (e) {
+      if (!consentCheck.checked) e.preventDefault();
+    });
+    consentCheck.addEventListener("change", function () {
+      consentBtn.setAttribute("aria-disabled", consentCheck.checked ? "false" : "true");
+    });
+  }
 })();
